@@ -17,7 +17,10 @@ LIBS	= $(LIBMLX) $(LIBFT)
 
 SRCDIR	= ./src
 SRC		=	$(SRCDIR)/main.c \
-			$(SRCDIR)/math.c
+			$(SRCDIR)/math.c \
+			$(SRCDIR)/inp_check.c \
+			$(SRCDIR)/_TEST.c \
+			$(SRCDIR)/cleanup.c
 
 OBJS	= ${SRC:.c=.o}
 

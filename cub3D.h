@@ -10,7 +10,7 @@
 # include <fcntl.h>
 # include <stdbool.h>
 # include <MLX42/MLX42.h>
-# include "../libft/libft.h"
+# include "libft/libft.h"
 
 # define PROMPT "map_file"
 
@@ -29,5 +29,7 @@ typedef struct s_cubed
 
 bool	check_map(t_cubed *cubed, char *map);
 void	cleanup(t_cubed *cubed);
+
+void	test_print_map(t_cubed *cubed, int size);
 
 #endif

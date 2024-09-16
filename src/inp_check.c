@@ -35,14 +35,15 @@ bool	check_map(t_cubed *cubed, char *map)
 	{
 		line = get_next_line(cubed->map_fd);
 		if (!line)
-			return (EXIT_FAILURE);
+			return (close(cubed->map_fd), EXIT_FAILURE);
 		if (line[0] == '\0')
 			break ;
 		concat = concat_line(concat, line);
 		if (!concat)
-			return (free(line), EXIT_FAILURE);
+			return (free(line), close(cubed->map_fd), EXIT_FAILURE);
 		free(line);
 	}
+	close(cubed->map_fd);
 	free(line);
 	cubed->map = ft_split(concat, '\n');
 	if (!cubed->map)
