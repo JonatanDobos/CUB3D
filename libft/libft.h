@@ -6,7 +6,7 @@
 /*   By: jdobos <jdobos@student.42.fr>                +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/23 13:07:39 by jdobos        #+#    #+#                 */
-/*   Updated: 2024/09/13 15:09:01 by joni          ########   odam.nl         */
+/*   Updated: 2024/09/16 17:17:02 by joni          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ char		*ft_strchr(const char *str, int c);
 char		*ft_strdup(const char *s);
 size_t		ft_strlcat(char *dest, const char *src, size_t n);
 size_t		ft_strlen(const char *str);
+size_t		ft_nstrlen(const char *str);
+void		ft_nfree(void **ptr);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 size_t		ft_strlcpy(char *dest, const char *src, size_t n);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
