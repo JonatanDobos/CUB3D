@@ -25,6 +25,8 @@ typedef struct s_mlx_data
 {
 	mlx_t		*instance;
 	mlx_image_t	*img;
+	__uint16_t	width;
+	__uint16_t	height;
 }	t_mlx_data;
 
 typedef struct s_cubed
